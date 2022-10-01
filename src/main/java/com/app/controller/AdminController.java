@@ -102,12 +102,6 @@ public class AdminController {
 		return busServiceImpl.getAllBus();
 	}
 	
-	@GetMapping("/getBusBySourceAndDestination/{source}/{destination}")
-	public List<Bus> getBusBySD(@PathVariable String source,@PathVariable String destination)
-	{
-		return busServiceImpl.getAllBusBySD(source, destination);
-	}
-	
 	
 	
 	
